@@ -3,8 +3,8 @@
 
 class database {
     private:
+    const std::string setting = "host=localhost port=5432 dbname=sicoor user=postgres password=pass";
     pqxx::connection connect;
-    const std::string setting = "host=localhost dbname=sicoor user=postgres password=pass";
 
     public:
     database();

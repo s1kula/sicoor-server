@@ -1,6 +1,6 @@
 #include "database.hpp"
 
-database::database() : connect("host=localhost port=5432 dbname=sicoor user=postgres password=r7Tzvzw9aU%XStNK"){};
+database::database() : connect(setting){};
 
 pqxx::result database::select(){
     try{

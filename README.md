@@ -1,8 +1,8 @@
-измените port на строке 57, передайте ip и port вашим пользователям. 
+измените port на строке 16(connection.hpp), передайте ip и port вашим пользователям. 
 создайте базу данных и таблицу messages (запрос ниже create table query).
 измените строку "setting" в database.hpp на данные вашей бд.
 
-change the port on line 57, provide the ip and port to your users.
+change the port on line 16(connection.hpp), provide the ip and port to your users.
 create a database and the messages table (query below create table query).
 change the string "setting" in database.hpp to your database credentials.
 
@@ -16,7 +16,7 @@ CREATE TABLE messages (
 
 сборка/build
 
-g++ main.cpp database.cpp -o main -lpqxx -lboost_system
+g++ main.cpp database.cpp connection.cpp -o main -lpqxx -lboost_system
 
 
 зависимости/dependencies
